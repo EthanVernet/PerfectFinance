@@ -1,0 +1,84 @@
+﻿<Page x:Class="Interface.Pages.InscriptionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Interface.Pages" 
+      xmlns:controls="clr-namespace:Interface.Controls"
+      mc:Ignorable="d" d:DesignHeight="450" d:DesignWidth="800"
+      Loaded="Page_Loaded" Style="{StaticResource BasePage}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="LeftColumn"/>
+            <ColumnDefinition/>
+            <ColumnDefinition x:Name="RightColumn"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid x:Name="Main" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="0.6*"/>
+                <RowDefinition Height="0.6*"/>
+                <RowDefinition Height="0.6*"/>
+                <RowDefinition Height="0.6*"/>
+                <RowDefinition Height="0.6*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Label Style="{StaticResource TitleLabel}" Content="Sign up"/>
+
+            <Label 
+            x:Name="NoAccount"
+            Grid.Row="0"
+            HorizontalAlignment="Center" VerticalAlignment="Bottom"
+            Margin="20,0,20,0"
+            Height="32"
+            >
+                <TextBlock>Already have an account ? <Hyperlink Style="{StaticResource Hyperlink}" NavigateUri="ConnexionPage.xaml">Sign In</Hyperlink></TextBlock>
+            </Label>
+
+            <controls:FieldBox
+            x:Name="Username"
+            Grid.Row="1" 
+            Margin="20,0,20,0"
+            TypeBox="TEXT"
+            PlaceholderText="Username"/>
+
+            <controls:VisualPasswordBox
+            x:Name="Password"
+            Grid.Row="2"
+            Margin="20,0,20,0"/>
+
+            <controls:FieldBox
+            x:Name="Mail"
+            Grid.Row="3" 
+            Margin="20,0,20,0"
+            TypeBox="TEXT"
+            PlaceholderText="Mail"/>
+
+            <controls:VisualPhoneBox 
+            x:Name="Phone"
+            Grid.Row="4" 
+            Margin="20,0,20,0"
+            Tag="Phone number"/>
+
+            <Label 
+            Name="Forgot"
+            Grid.Row="5"
+            Height="32"
+            Margin="20,0,20,0"
+            HorizontalAlignment="Right" VerticalAlignment="Top"
+            VerticalContentAlignment="Center" 
+        >
+                <Hyperlink Style="{StaticResource Hyperlink}" Click="Hyperlink_Click" >Forgot password ?</Hyperlink>
+            </Label>
+
+            <Button Style="{StaticResource ActionButton}"
+            x:Name="Login"
+            Grid.Row="6" 
+            Margin="20"
+            Content="Sign up"
+            Click="Login_Click"/>
+        </Grid>
+    </Grid>
+</Page>

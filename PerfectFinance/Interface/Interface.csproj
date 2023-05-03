@@ -1,0 +1,122 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Ressource\add.png" />
+    <None Remove="Ressource\add_c.png" />
+    <None Remove="Ressource\back.png" />
+    <None Remove="Ressource\back_c.png" />
+    <None Remove="Ressource\cash.png" />
+    <None Remove="Ressource\cheque.png" />
+    <None Remove="Ressource\close_eye.png" />
+    <None Remove="Ressource\close_eye_c.png" />
+    <None Remove="Ressource\create.png" />
+    <None Remove="Ressource\credit.png" />
+    <None Remove="Ressource\delete.png" />
+    <None Remove="Ressource\delete_c.png" />
+    <None Remove="Ressource\edit.png" />
+    <None Remove="Ressource\edit_c.png" />
+    <None Remove="Ressource\error.png" />
+    <None Remove="Ressource\euro_c.png" />
+    <None Remove="Ressource\logo_account.png" />
+    <None Remove="Ressource\logo_account_c.png" />
+    <None Remove="Ressource\logo_category.png" />
+    <None Remove="Ressource\logo_category_c.png" />
+    <None Remove="Ressource\logo_menu.png" />
+    <None Remove="Ressource\logo_menu_c.png" />
+    <None Remove="Ressource\logo_pret.png" />
+    <None Remove="Ressource\logo_pret_c.png" />
+    <None Remove="Ressource\logo_setting.png" />
+    <None Remove="Ressource\logo_setting_c.png" />
+    <None Remove="Ressource\logo_stat.png" />
+    <None Remove="Ressource\logo_stat_c.png" />
+    <None Remove="Ressource\logo_template.png" />
+    <None Remove="Ressource\logo_template_c.png" />
+    <None Remove="Ressource\logo_transaction.png" />
+    <None Remove="Ressource\logo_transaction_c.png" />
+    <None Remove="Ressource\open_eye.png" />
+    <None Remove="Ressource\open_eye_c.png" />
+    <None Remove="Ressource\setting.png" />
+    <None Remove="Ressource\settings_c.png" />
+    <None Remove="Ressource\switch_off.png" />
+    <None Remove="Ressource\switch_off_c.png" />
+    <None Remove="Ressource\switch_on.png" />
+    <None Remove="Ressource\switch_on_c.png" />
+    <None Remove="Ressource\titlebar_black_close.png" />
+    <None Remove="Ressource\titlebar_black_maximize.png" />
+    <None Remove="Ressource\titlebar_black_minimize.png" />
+    <None Remove="Ressource\titlebar_black_restore.png" />
+    <None Remove="Ressource\titlebar_white_close.png" />
+    <None Remove="Ressource\titlebar_white_maximize.png" />
+    <None Remove="Ressource\titlebar_white_minimize.png" />
+    <None Remove="Ressource\titlebar_white_restore.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Exceptions\Exceptions.csproj" />
+    <ProjectReference Include="..\Model\Logic.csproj" />
+    <ProjectReference Include="..\Storage\Storage.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Ressource\add.png" />
+    <Resource Include="Ressource\add_c.png" />
+    <Resource Include="Ressource\back.png" />
+    <Resource Include="Ressource\back_c.png" />
+    <Resource Include="Ressource\cash.png" />
+    <Resource Include="Ressource\cheque.png" />
+    <Resource Include="Ressource\close_eye.png" />
+    <Resource Include="Ressource\close_eye_c.png" />
+    <Resource Include="Ressource\create.png" />
+    <Resource Include="Ressource\credit.png" />
+    <Resource Include="Ressource\delete.png" />
+    <Resource Include="Ressource\delete_c.png" />
+    <Resource Include="Ressource\edit.png" />
+    <Resource Include="Ressource\edit_c.png" />
+    <Resource Include="Ressource\error.png" />
+    <Resource Include="Ressource\euro_c.png" />
+    <Resource Include="Ressource\logo_account.png" />
+    <Resource Include="Ressource\logo_account_c.png" />
+    <Resource Include="Ressource\logo_category.png" />
+    <Resource Include="Ressource\logo_category_c.png" />
+    <Resource Include="Ressource\logo_menu.png" />
+    <Resource Include="Ressource\logo_menu_c.png" />
+    <Resource Include="Ressource\logo_pret.png" />
+    <Resource Include="Ressource\logo_pret_c.png" />
+    <Resource Include="Ressource\logo_setting.png" />
+    <Resource Include="Ressource\logo_setting_c.png" />
+    <Resource Include="Ressource\logo_stat.png" />
+    <Resource Include="Ressource\logo_stat_c.png" />
+    <Resource Include="Ressource\logo_template.png" />
+    <Resource Include="Ressource\logo_template_c.png" />
+    <Resource Include="Ressource\logo_transaction.png" />
+    <Resource Include="Ressource\logo_transaction_c.png" />
+    <Resource Include="Ressource\open_eye.png" />
+    <Resource Include="Ressource\open_eye_c.png" />
+    <Resource Include="Ressource\setting.png" />
+    <Resource Include="Ressource\settings_c.png" />
+    <Resource Include="Ressource\switch_off.png" />
+    <Resource Include="Ressource\switch_off_c.png" />
+    <Resource Include="Ressource\switch_on.png" />
+    <Resource Include="Ressource\switch_on_c.png" />
+    <Resource Include="Ressource\titlebar_black_close.png" />
+    <Resource Include="Ressource\titlebar_black_maximize.png" />
+    <Resource Include="Ressource\titlebar_black_minimize.png" />
+    <Resource Include="Ressource\titlebar_black_restore.png" />
+    <Resource Include="Ressource\titlebar_white_close.png" />
+    <Resource Include="Ressource\titlebar_white_maximize.png" />
+    <Resource Include="Ressource\titlebar_white_minimize.png" />
+    <Resource Include="Ressource\titlebar_white_restore.png" />
+  </ItemGroup>
+
+</Project>

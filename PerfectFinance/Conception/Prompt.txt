@@ -1,0 +1,77 @@
+Tu est un expert du C#. 
+J'ai pour projet de réaliser un projet pour aider les personnes dans la gestion de leurs budget. 
+
+Plateforme
+Desktop : 
+	implémente toutes les fonctionnalités de l'application et permet de générer des relevés de comptes
+Web : 
+	Donne un accès global à l'application et implémente toutes les fonctionnalités
+Smartphone : 
+    permet une ajout/modification/suppression rapide, facile et intuitive des transactions, 
+	affichage facile des données et des graphiques, 
+	et permet de suivre à tout moment où nous en sommes dans nos dépenses.
+			
+Application
+
+Donnée Utilisateur :
+    Pseudo 		
+    Mots de passe
+    Téléphone 
+    AdresseMail
+
+Caractéristique techniques :
+    Permettre une persistance des données à travers une base de données
+    Respecter les principe Solid
+    Un utilisateur doit pouvoir s'inscrire et se connecter de manière sécuriser et simple
+    L'application doit avoir un bon niveaux de sécurité
+	Sauvegarder automatiquement à chaque modification des données
+
+
+Fonctionalité :
+
+A part :
+	Proposer un tutoriel à la première ouverture ou sur demande de l'utilisateur
+	Mode automatique/manuelle pour la génération de rapport
+	A inscription Web/Desktop, envoie un lien de téléchargement de l'app
+	Templates présent par défaut générale et pertinent
+	p
+
+Gestion :
+    Permettre de mieux Gérer son budget
+    L'application doit pouvoir être utilisé quotidiennement	
+	
+    L'application propose des templates de gestion
+    Gestion Multi-Compte
+    Gestion de Catégorie de dépense
+    Gestion des transactions
+	
+	Gestion des Dettes
+	Gestion des Prêts
+
+	
+Analyse de Données :
+    Générer des données statistique de consommation
+    Afficher ces données dans des graphique simple, pertinent et compréhensible
+	Encourager/Féliciter fonction des objectifs  (Pas de négativité)
+
+
+Personalisation :
+    Le parametrage de son template défini des objectifs
+    Désactiver/activer facilement notifications d'encouragement/félicitation
+    Comparer dépenses actuelles avec dépense mois/années dernières
+	Choisir l'emplacement de sauvegarde des comptes rendue
+	Template facilement modifible pour s'adapter à l'utilisateur
+	L'utilisateur doit pouvoir sauvegarder un template 
+	Light Mode / Dark Mode 
+
+Communauté :
+	L'utilisateur peux partager un template ou importer un templates
+	
+
+
+	
+
+	
+
+
+

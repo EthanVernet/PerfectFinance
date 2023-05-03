@@ -1,0 +1,145 @@
+﻿<Window x:Class="Interface.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interface" 
+        xmlns:controls="clr-namespace:Interface.Controls"
+        mc:Ignorable="d"
+        x:Name="Main"
+        Height="450" Width="800"
+        SizeChanged="MainWindow_SizeChanged"
+        Style="{StaticResource BaseWindow}">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <controls:TitleBar x:Name="Bar"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="52"/>
+                <ColumnDefinition Width="52"/>
+                <ColumnDefinition Width="52"/>
+                <ColumnDefinition Width="52"/>
+                <ColumnDefinition Width="52"/>
+                <ColumnDefinition Width="52"/>
+                <ColumnDefinition Width="52"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="52"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="52"/>
+                <RowDefinition Height="52"/>
+                <RowDefinition Height="52"/>
+                <RowDefinition Height="52"/>
+                <RowDefinition Height="52"/>
+                <RowDefinition Height="52"/>
+                <RowDefinition Height="52"/>
+                <RowDefinition/>
+                <RowDefinition Height="52"/>
+            </Grid.RowDefinitions>
+
+            <Button 
+                x:Name="Menu" 
+                Grid.Row="0" Style="{StaticResource MenuButton}"
+                Click="Menu_Click"/>
+            <Button 
+                x:Name="Account" 
+                Grid.Row="1" Style="{StaticResource AccountButton}"
+                Click="Account_Click"/>
+            <Button 
+                x:Name="Category" 
+                Grid.Row="2" Style="{StaticResource CategoryButton}"
+                Click="Category_Click"/>
+            <Button 
+                x:Name="Transaction" 
+                Grid.Row="3" Style="{StaticResource TransactionButton}"
+                Click="Transaction_Click"/>
+            <Button 
+                x:Name="Pret" 
+                Grid.Row="4" Style="{StaticResource PretButton}"
+                Click="Pret_Click"/>
+            <Button 
+                x:Name="Stat" 
+                Grid.Row="5" Style="{StaticResource StatButton}"
+                Click="Stat_Click"/>
+            <Button 
+                x:Name="Template" 
+                Grid.Row="6" Style="{StaticResource TemplateButton}"
+                Click="Template_Click"/>
+            <Button 
+                x:Name="Setting" 
+                Grid.Row="8" Style="{StaticResource SettingButton}"
+                Click="Setting_Click"/>
+
+            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"
+               Grid.Column="1" Grid.Row="0"
+               Grid.ColumnSpan="8" Grid.RowSpan="9"/>
+        </Grid>
+
+        <!--#region 4ResizeWindow-->
+        <Thumb x:Name="LeftThumb" Style="{StaticResource ResizingThumbStyle}"
+            HorizontalAlignment="Left"
+            Grid.RowSpan="2" Grid.Column="0"  
+            Width="6" 
+            Cursor="SizeWE" 
+            DragDelta="ResizeThumb_DragDelta" />
+
+        <Thumb x:Name="TopThumb" Style="{StaticResource ResizingThumbStyle}"
+            VerticalAlignment="Top"
+            Grid.Row="0" Grid.ColumnSpan="9"  
+            Height="6" 
+            Cursor="SizeNS" 
+            DragDelta="ResizeThumb_DragDelta" />
+
+        <Thumb x:Name="RightThumb" Style="{StaticResource ResizingThumbStyle}"
+            HorizontalAlignment="Right"
+            Grid.RowSpan="2" Grid.Column="9" 
+            Width="6" 
+            Cursor="SizeWE" 
+            DragDelta="ResizeThumb_DragDelta" />
+
+        <Thumb x:Name="BottomThumb" Style="{StaticResource ResizingThumbStyle}"
+            VerticalAlignment="Bottom"
+            Grid.Row="1" Grid.ColumnSpan="9" 
+            Height="6" 
+            Cursor="SizeNS" 
+            DragDelta="ResizeThumb_DragDelta" />
+
+        <Thumb x:Name="TopLeftThumb" Style="{StaticResource ResizingThumbStyle}"
+            VerticalAlignment="Top" HorizontalAlignment="Left"
+            Grid.Row="0" Grid.Column="0" 
+            Width="6" Height="6" 
+            Cursor="SizeNWSE" 
+            DragDelta="ResizeThumb_DragDelta" />
+
+        <Thumb x:Name="TopRightThumb" Style="{StaticResource ResizingThumbStyle}"
+            VerticalAlignment="Top" HorizontalAlignment="Right"
+            Grid.Row="0" Grid.Column="9"
+            Width="6" Height="6" 
+            Cursor="SizeNESW" 
+            DragDelta="ResizeThumb_DragDelta" />
+
+        <Thumb x:Name="BottomLeftThumb" Style="{StaticResource ResizingThumbStyle}"
+            VerticalAlignment="Bottom" HorizontalAlignment="Left"
+            Grid.Row="1" Grid.Column="0"
+            Width="6" Height="6" 
+            Cursor="SizeNESW" 
+            DragDelta="ResizeThumb_DragDelta" />
+
+        <Thumb x:Name="BottomRightThumb" Style="{StaticResource ResizingThumbStyle}"
+            VerticalAlignment="Bottom" HorizontalAlignment="Right"
+            Grid.Row="1" Grid.Column="9" 
+            Width="6" Height="6" 
+            Cursor="SizeNWSE" 
+            DragDelta="ResizeThumb_DragDelta" />
+        <!--#endregion-->
+
+        <Border Grid.Row="1" BorderBrush="{StaticResource BrushBlue1}" BorderThickness="1"/>
+
+    </Grid>
+</Window>
