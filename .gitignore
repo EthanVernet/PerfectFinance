@@ -1,0 +1,72 @@
+bin/
+obj/
+
+_ReSharper.*/
+
+*~
+
+*.log
+
+*.bak
+
+packages/
+
+msbuild.log
+msbuild*.txt
+
+publish/
+
+*.swp
+
+*.sln.docstates
+
+*.user
+
+*.vsconfig
+
+*.csproj.user
+*.suo
+. suo.
+*.userprefs
+*. usertasks
+
+TestResults/
+
+[Tt]est[Rr]esult*/
+[Bb]uild[Dd]ebug*/
+[Bb]uild[Rr]elease*/
+obj/
+[Bb]in/
+[Rr]elease*/
+[Dd]ebug*/
+NCrunch*
+*.Cache
+ClientBin/
+[Oo]bserver_TestResults/
+
+*.VisualState.xml
+. suo.
+*.bak
+*.cache
+*.cloudberry
+*.dotCover
+. dotCover.
+*.resharper
+*.resharper.user
+*.resharper.user
+*.suo
+. suo.
+*.swp
+*.tmp
+. tmp.
+*.user
+*.userprefs
+*.usertasks
+
+*.pdb
+*.ini
+*.sw?
+
+TestResults/
+_TestDatabase.mdf
+_TestDatabase_log.ldf
